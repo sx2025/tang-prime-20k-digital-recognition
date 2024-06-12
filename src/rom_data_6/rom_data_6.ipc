@@ -1,0 +1,15 @@
+[General]
+ipc_version=4
+file=rom_data_6
+module=rom_data_6
+target_device=gw2a18c-011
+type=ram_prom
+version=1.0
+
+[Config]
+DEPTH=2500
+LANG=0
+MEM_FILE=../data_0_9/six.mi
+READ=0
+RESET_MODE=true
+WIDTH=1

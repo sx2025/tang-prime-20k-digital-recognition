@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gowin-synthesis-project>
+<Project>
+    <Version>beta</Version>
+    <Device id="GW2A-18C" package="PBGA256" speed="8" partNumber="GW2A-LV18PG256C8/I7"/>
+    <FileList>
+        <File path="E:\hbird\xianshi_1\src\SQRT.v" type="verilog"/>
+        <File path="E:\hbird\xianshi_1\src\VIP_Matrix_Generate_3X3_8Bit.v" type="verilog"/>
+        <File path="E:\hbird\xianshi_1\src\VIP_Sobel_Edge_Detector.v" type="verilog"/>
+        <File path="E:\hbird\xianshi_1\src\cmos_8_16bit.v" type="verilog"/>
+        <File path="E:\hbird\xianshi_1\src\cmos_data.v" type="verilog"/>
+        <File path="E:\hbird\xianshi_1\src\conv_cal.v" type="verilog"/>
+        <File path="E:\hbird\xianshi_1\src\data_ram.v" type="verilog"/>
+        <File path="E:\hbird\xianshi_1\src\ddr3_memory_interface\DDR3MI.v" type="verilog"/>
+        <File path="E:\hbird\xianshi_1\src\downsample.v" type="verilog"/>
+        <File path="E:\hbird\xianshi_1\src\fifo_generator_0\fifo_generator_0.v" type="verilog"/>
+        <File path="E:\hbird\xianshi_1\src\fifo_hs\video_fifo.v" type="verilog"/>
+        <File path="E:\hbird\xianshi_1\src\gowin_dpb\gowin_dpb.v" type="verilog"/>
+        <File path="E:\hbird\xianshi_1\src\gowin_prom\rom_w0_ip.v" type="verilog"/>
+        <File path="E:\hbird\xianshi_1\src\gowin_ram16sdp\gowin_ram16sdp.v" type="verilog"/>
+        <File path="E:\hbird\xianshi_1\src\gowin_rpll\cmos_pll.v" type="verilog"/>
+        <File path="E:\hbird\xianshi_1\src\gowin_rpll\mem_pll.v" type="verilog"/>
+        <File path="E:\hbird\xianshi_1\src\gowin_rpll\sys_pll.v" type="verilog"/>
+        <File path="E:\hbird\xianshi_1\src\i2c_master\i2c_config.v" type="verilog"/>
+        <File path="E:\hbird\xianshi_1\src\i2c_master\i2c_master_bit_ctrl.v" type="verilog"/>
+        <File path="E:\hbird\xianshi_1\src\i2c_master\i2c_master_byte_ctrl.v" type="verilog"/>
+        <File path="E:\hbird\xianshi_1\src\i2c_master\i2c_master_defines.v" type="verilog"/>
+        <File path="E:\hbird\xianshi_1\src\i2c_master\i2c_master_top.v" type="verilog"/>
+        <File path="E:\hbird\xianshi_1\src\i2c_master\timescale.v" type="verilog"/>
+        <File path="E:\hbird\xianshi_1\src\line_shift_RAM_8bit.v" type="verilog"/>
+        <File path="E:\hbird\xianshi_1\src\lut_ov5640_rgb565_480_272.v" type="verilog"/>
+        <File path="E:\hbird\xianshi_1\src\mult_gen_0\mult_gen_0.v" type="verilog"/>
+        <File path="E:\hbird\xianshi_1\src\output.v" type="verilog"/>
+        <File path="E:\hbird\xianshi_1\src\param_rom.v" type="verilog"/>
+        <File path="E:\hbird\xianshi_1\src\pool_layer.v" type="verilog"/>
+        <File path="E:\hbird\xianshi_1\src\rom_b_ip\rom_b_ip.v" type="verilog"/>
+        <File path="E:\hbird\xianshi_1\src\rom_data_0\rom_data_0.v" type="verilog"/>
+        <File path="E:\hbird\xianshi_1\src\rom_data_1\rom_data_1.v" type="verilog"/>
+        <File path="E:\hbird\xianshi_1\src\rom_data_2\rom_data_2.v" type="verilog"/>
+        <File path="E:\hbird\xianshi_1\src\rom_data_3\rom_data_3.v" type="verilog"/>
+        <File path="E:\hbird\xianshi_1\src\rom_data_4\rom_data_4.v" type="verilog"/>
+        <File path="E:\hbird\xianshi_1\src\rom_data_5\rom_data_5.v" type="verilog"/>
+        <File path="E:\hbird\xianshi_1\src\rom_data_6\rom_data_6.v" type="verilog"/>
+        <File path="E:\hbird\xianshi_1\src\rom_data_7\rom_data_7.v" type="verilog"/>
+        <File path="E:\hbird\xianshi_1\src\rom_data_8\rom_data_8.v" type="verilog"/>
+        <File path="E:\hbird\xianshi_1\src\rom_data_9\rom_data_9.v" type="verilog"/>
+        <File path="E:\hbird\xianshi_1\src\rom_w1_ip\rom_w1_ip.v" type="verilog"/>
+        <File path="E:\hbird\xianshi_1\src\rom_w2_ip\rom_w2_ip.v" type="verilog"/>
+        <File path="E:\hbird\xianshi_1\src\rom_w3_ip\rom_w3_ip.v" type="verilog"/>
+        <File path="E:\hbird\xianshi_1\src\rom_w4_ip\rom_w4_ip.v" type="verilog"/>
+        <File path="E:\hbird\xianshi_1\src\shibie\binarization.v" type="verilog"/>
+        <File path="E:\hbird\xianshi_1\src\shibie\digital_recognition.v" type="verilog"/>
+        <File path="E:\hbird\xianshi_1\src\shibie\lcd_driver.v" type="verilog"/>
+        <File path="E:\hbird\xianshi_1\src\shibie\myram.v" type="verilog"/>
+        <File path="E:\hbird\xianshi_1\src\shibie\projection.v" type="verilog"/>
+        <File path="E:\hbird\xianshi_1\src\shibie\rgb2ycbcr.v" type="verilog"/>
+        <File path="E:\hbird\xianshi_1\src\syn_gen.v" type="verilog"/>
+        <File path="E:\hbird\xianshi_1\src\testpattern.v" type="verilog"/>
+        <File path="E:\hbird\xianshi_1\src\top.v" type="verilog"/>
+        <File path="E:\hbird\xianshi_1\src\video_frame_buffer\Video_Frame_Buffer_Top.v" type="verilog"/>
+    </FileList>
+    <OptionList>
+        <Option type="disable_insert_pad" value="0"/>
+        <Option type="looplimit" value="2000"/>
+        <Option type="output_file" value="E:\hbird\xianshi_1\impl\gwsynthesis\top.vg"/>
+        <Option type="print_all_synthesis_warning" value="0"/>
+        <Option type="ram_rw_check" value="1"/>
+        <Option type="top_module" value="top"/>
+        <Option type="verilog_language" value="verilog-2001"/>
+        <Option type="vhdl_language" value="vhdl-1993"/>
+    </OptionList>
+</Project>

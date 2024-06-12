@@ -1,0 +1,138 @@
+//Copyright (C)2014-2023 Gowin Semiconductor Corporation.
+//All rights reserved.
+//File Title: Post-PnR Simulation Model file
+//GOWIN Version: V1.9.9 Beta-4 Education
+//Created Time: Wed May 08 17:16:48 2024
+
+`timescale 100 ps/100 ps
+module mult_gen_0(
+	ce,
+	clk,
+	reset,
+	real1,
+	real2,
+	imag1,
+	imag2,
+	realo,
+	imago
+);
+input ce;
+input clk;
+input reset;
+input [17:0] real1;
+input [17:0] real2;
+input [17:0] imag1;
+input [17:0] imag2;
+output [36:0] realo;
+output [36:0] imago;
+wire GND;
+wire VCC;
+wire ce;
+wire clk;
+wire [17:0] imag1;
+wire [17:0] imag2;
+wire [36:0] imago;
+wire [17:0] real1;
+wire [17:0] real2;
+wire [36:0] realo;
+wire reset;
+wire [53:37] \u_complex_mult/DOUT ;
+wire [54:0] \u_complex_mult/CASO ;
+wire [17:0] \u_complex_mult/SOA ;
+wire [17:0] \u_complex_mult/SOB ;
+wire [53:37] \u_complex_mult/DOUT_0 ;
+wire [54:0] \u_complex_mult/CASO_0 ;
+wire [17:0] \u_complex_mult/SOA_0 ;
+wire [17:0] \u_complex_mult/SOB_0 ;
+VCC VCC_cZ (
+  .V(VCC)
+);
+GND GND_cZ (
+  .G(GND)
+);
+GSR GSR (
+	.GSRI(VCC)
+);
+MULTADDALU18X18 \u_complex_mult/multaddalu18x18_instp  (
+	.ACCLOAD(GND),
+	.CE(ce),
+	.CLK(clk),
+	.RESET(reset),
+	.SIA({GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND}),
+	.SIB({GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND}),
+	.A0({real1[17:0]}),
+	.B0({real2[17:0]}),
+	.A1({imag1[17:0]}),
+	.B1({imag2[17:0]}),
+	.C({GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND}),
+	.CASI({GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND}),
+	.ASIGN({VCC, VCC}),
+	.BSIGN({VCC, VCC}),
+	.ASEL({GND, GND}),
+	.BSEL({GND, GND}),
+	.SOA({\u_complex_mult/SOA [17:0]}),
+	.SOB({\u_complex_mult/SOB [17:0]}),
+	.CASO({\u_complex_mult/CASO [54:0]}),
+	.DOUT({\u_complex_mult/DOUT [53:37], realo[36:0]})
+);
+defparam \u_complex_mult/multaddalu18x18_instp .A0REG=1'b0;
+defparam \u_complex_mult/multaddalu18x18_instp .A1REG=1'b0;
+defparam \u_complex_mult/multaddalu18x18_instp .B0REG=1'b0;
+defparam \u_complex_mult/multaddalu18x18_instp .B1REG=1'b0;
+defparam \u_complex_mult/multaddalu18x18_instp .CREG=1'b0;
+defparam \u_complex_mult/multaddalu18x18_instp .SOA_REG=1'b0;
+defparam \u_complex_mult/multaddalu18x18_instp .OUT_REG=1'b1;
+defparam \u_complex_mult/multaddalu18x18_instp .PIPE0_REG=1'b0;
+defparam \u_complex_mult/multaddalu18x18_instp .PIPE1_REG=1'b0;
+defparam \u_complex_mult/multaddalu18x18_instp .ASIGN0_REG=1'b0;
+defparam \u_complex_mult/multaddalu18x18_instp .ASIGN1_REG=1'b0;
+defparam \u_complex_mult/multaddalu18x18_instp .BSIGN0_REG=1'b0;
+defparam \u_complex_mult/multaddalu18x18_instp .BSIGN1_REG=1'b0;
+defparam \u_complex_mult/multaddalu18x18_instp .B_ADD_SUB=1'b1;
+defparam \u_complex_mult/multaddalu18x18_instp .C_ADD_SUB=1'b0;
+defparam \u_complex_mult/multaddalu18x18_instp .MULT_RESET_MODE="SYNC";
+defparam \u_complex_mult/multaddalu18x18_instp .ACCLOAD_REG0=1'b0;
+defparam \u_complex_mult/multaddalu18x18_instp .ACCLOAD_REG1=1'b0;
+defparam \u_complex_mult/multaddalu18x18_instp .MULTADDALU18X18_MODE=2;
+MULTADDALU18X18 \u_complex_mult/multaddalu18x18_instq  (
+	.ACCLOAD(GND),
+	.CE(ce),
+	.CLK(clk),
+	.RESET(reset),
+	.SIA({GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND}),
+	.SIB({GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND}),
+	.A0({real1[17:0]}),
+	.B0({imag2[17:0]}),
+	.A1({imag1[17:0]}),
+	.B1({real2[17:0]}),
+	.C({GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND}),
+	.CASI({GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND}),
+	.ASIGN({VCC, VCC}),
+	.BSIGN({VCC, VCC}),
+	.ASEL({GND, GND}),
+	.BSEL({GND, GND}),
+	.SOA({\u_complex_mult/SOA_0 [17:0]}),
+	.SOB({\u_complex_mult/SOB_0 [17:0]}),
+	.CASO({\u_complex_mult/CASO_0 [54:0]}),
+	.DOUT({\u_complex_mult/DOUT_0 [53:37], imago[36:0]})
+);
+defparam \u_complex_mult/multaddalu18x18_instq .A0REG=1'b0;
+defparam \u_complex_mult/multaddalu18x18_instq .A1REG=1'b0;
+defparam \u_complex_mult/multaddalu18x18_instq .B0REG=1'b0;
+defparam \u_complex_mult/multaddalu18x18_instq .B1REG=1'b0;
+defparam \u_complex_mult/multaddalu18x18_instq .CREG=1'b0;
+defparam \u_complex_mult/multaddalu18x18_instq .SOA_REG=1'b0;
+defparam \u_complex_mult/multaddalu18x18_instq .OUT_REG=1'b1;
+defparam \u_complex_mult/multaddalu18x18_instq .PIPE0_REG=1'b0;
+defparam \u_complex_mult/multaddalu18x18_instq .PIPE1_REG=1'b0;
+defparam \u_complex_mult/multaddalu18x18_instq .ASIGN0_REG=1'b0;
+defparam \u_complex_mult/multaddalu18x18_instq .ASIGN1_REG=1'b0;
+defparam \u_complex_mult/multaddalu18x18_instq .BSIGN0_REG=1'b0;
+defparam \u_complex_mult/multaddalu18x18_instq .BSIGN1_REG=1'b0;
+defparam \u_complex_mult/multaddalu18x18_instq .B_ADD_SUB=1'b0;
+defparam \u_complex_mult/multaddalu18x18_instq .C_ADD_SUB=1'b0;
+defparam \u_complex_mult/multaddalu18x18_instq .MULT_RESET_MODE="SYNC";
+defparam \u_complex_mult/multaddalu18x18_instq .ACCLOAD_REG0=1'b0;
+defparam \u_complex_mult/multaddalu18x18_instq .ACCLOAD_REG1=1'b0;
+defparam \u_complex_mult/multaddalu18x18_instq .MULTADDALU18X18_MODE=2;
+endmodule

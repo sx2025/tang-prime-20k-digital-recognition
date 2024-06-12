@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module name="top" Register="1710" Alu="140" Lut="2180" Bsram="16" Ssram="117">
+ <SubModule name="sys_pll_m0"/>
+ <SubModule name="cmos_pll_m0"/>
+ <SubModule name="mem_pll_m0"/>
+ <SubModule name="i2c_config_m0" Register="13" Lut="28">
+  <SubModule name="i2c_master_top_m0" Register="17" Lut="642">
+   <SubModule name="byte_controller" Register="23" Lut="49">
+    <SubModule name="bit_controller" Register="71" Alu="15" Lut="98"/>
+   </SubModule>
+  </SubModule>
+ </SubModule>
+ <SubModule name="cmos_8_16bit_m0" Register="29" Lut="3"/>
+ <SubModule name="u_cmos_data" Register="20" Lut="33"/>
+ <SubModule name="u_rgb2ycbcr" Register="14" Dsp="2"/>
+ <SubModule name="u_binarization" Register="4" Lut="3"/>
+ <SubModule name="u_projection" Register="135" Alu="20" Lut="187">
+  <SubModule name="u_h_myram" Lut="64" Ssram="30"/>
+  <SubModule name="u_v_myram" Lut="50" Ssram="17"/>
+  <SubModule name="u_col_border_myram" Lut="7" Ssram="3"/>
+  <SubModule name="u_row_border_myram" Lut="5" Ssram="3"/>
+ </SubModule>
+ <SubModule name="u_digital_recognition" Register="196" Alu="82" Lut="231" Dsp="4" Ssram="7"/>
+ <SubModule name="u_VIP_Sobel_Edge_Detector" Register="46" Alu="130" Lut="23" Dsp="1">
+  <SubModule name="u_VIP_Matrix_Generate_3X3_8Bit" Register="81" Lut="72">
+   <SubModule name="u_Line_Shift_RAM_8Bit" Register="50" Alu="9" Lut="3" Ssram="2">
+    <SubModule name="u_ram_1024x8_1" Lut="638" Ssram="128"/>
+    <SubModule name="u_ram_1024x8_2" Lut="638" Ssram="128"/>
+   </SubModule>
+  </SubModule>
+  <SubModule name="u_SQRT" Register="100" Alu="60" Lut="69" Dsp="3"/>
+ </SubModule>
+ <SubModule name="syn_gen_inst" Register="32" Lut="63"/>
+ <SubModule name="u_rom_data_0" Bsram="1"/>
+ <SubModule name="u_rom_data_1" Bsram="1"/>
+ <SubModule name="u_rom_data_2" Bsram="1"/>
+ <SubModule name="u_rom_data_3" Bsram="1"/>
+ <SubModule name="u_rom_data_4" Bsram="1"/>
+ <SubModule name="u_rom_data_5" Bsram="1"/>
+ <SubModule name="u_rom_data_6" Bsram="1"/>
+ <SubModule name="u_rom_data_7" Bsram="1"/>
+ <SubModule name="u_rom_data_8" Bsram="1"/>
+ <SubModule name="u_rom_data_9" Bsram="1"/>
+ <SubModule name="u_out_data" Register="51" Lut="144" Ssram="4"/>
+</Module>

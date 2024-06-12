@@ -1,0 +1,73 @@
+<?xml version="1" encoding="UTF-8"?>
+<!DOCTYPE gowin-fpga-project>
+<Project>
+    <Template>FPGA</Template>
+    <Version>5</Version>
+    <Device name="GW2A-18C" pn="GW2A-LV18PG256C8/I7">gw2a18c-011</Device>
+    <FileList>
+        <File path="src/SQRT.v" type="file.verilog" enable="1"/>
+        <File path="src/VIP_Matrix_Generate_3X3_8Bit.v" type="file.verilog" enable="1"/>
+        <File path="src/VIP_Sobel_Edge_Detector.v" type="file.verilog" enable="1"/>
+        <File path="src/cmos_8_16bit.v" type="file.verilog" enable="1"/>
+        <File path="src/cmos_data.v" type="file.verilog" enable="1"/>
+        <File path="src/conv_cal.v" type="file.verilog" enable="1"/>
+        <File path="src/data_ram.v" type="file.verilog" enable="1"/>
+        <File path="src/ddr3_memory_interface/DDR3MI.v" type="file.verilog" enable="1"/>
+        <File path="src/downsample.v" type="file.verilog" enable="1"/>
+        <File path="src/fifo_generator_0/fifo_generator_0.v" type="file.verilog" enable="1"/>
+        <File path="src/fifo_hs/video_fifo.v" type="file.verilog" enable="1"/>
+        <File path="src/gowin_dpb/gowin_dpb.v" type="file.verilog" enable="1"/>
+        <File path="src/gowin_prom/rom_w0_ip.v" type="file.verilog" enable="1"/>
+        <File path="src/gowin_ram16sdp/gowin_ram16sdp.v" type="file.verilog" enable="1"/>
+        <File path="src/gowin_rpll/cmos_pll.v" type="file.verilog" enable="1"/>
+        <File path="src/gowin_rpll/mem_pll.v" type="file.verilog" enable="1"/>
+        <File path="src/gowin_rpll/sys_pll.v" type="file.verilog" enable="1"/>
+        <File path="src/i2c_master/i2c_config.v" type="file.verilog" enable="1"/>
+        <File path="src/i2c_master/i2c_master_bit_ctrl.v" type="file.verilog" enable="1"/>
+        <File path="src/i2c_master/i2c_master_byte_ctrl.v" type="file.verilog" enable="1"/>
+        <File path="src/i2c_master/i2c_master_defines.v" type="file.verilog" enable="1"/>
+        <File path="src/i2c_master/i2c_master_top.v" type="file.verilog" enable="1"/>
+        <File path="src/i2c_master/timescale.v" type="file.verilog" enable="1"/>
+        <File path="src/line_shift_RAM_8bit.v" type="file.verilog" enable="1"/>
+        <File path="src/lut_ov5640_rgb565_480_272.v" type="file.verilog" enable="1"/>
+        <File path="src/mult_gen_0/mult_gen_0.v" type="file.verilog" enable="1"/>
+        <File path="src/output.v" type="file.verilog" enable="1"/>
+        <File path="src/param_rom.v" type="file.verilog" enable="1"/>
+        <File path="src/pool_layer.v" type="file.verilog" enable="1"/>
+        <File path="src/rom_b_ip/rom_b_ip.v" type="file.verilog" enable="1"/>
+        <File path="src/rom_data_0/rom_data_0.v" type="file.verilog" enable="1"/>
+        <File path="src/rom_data_1/rom_data_1.v" type="file.verilog" enable="1"/>
+        <File path="src/rom_data_2/rom_data_2.v" type="file.verilog" enable="1"/>
+        <File path="src/rom_data_3/rom_data_3.v" type="file.verilog" enable="1"/>
+        <File path="src/rom_data_4/rom_data_4.v" type="file.verilog" enable="1"/>
+        <File path="src/rom_data_5/rom_data_5.v" type="file.verilog" enable="1"/>
+        <File path="src/rom_data_6/rom_data_6.v" type="file.verilog" enable="1"/>
+        <File path="src/rom_data_7/rom_data_7.v" type="file.verilog" enable="1"/>
+        <File path="src/rom_data_8/rom_data_8.v" type="file.verilog" enable="1"/>
+        <File path="src/rom_data_9/rom_data_9.v" type="file.verilog" enable="1"/>
+        <File path="src/rom_w1_ip/rom_w1_ip.v" type="file.verilog" enable="1"/>
+        <File path="src/rom_w2_ip/rom_w2_ip.v" type="file.verilog" enable="1"/>
+        <File path="src/rom_w3_ip/rom_w3_ip.v" type="file.verilog" enable="1"/>
+        <File path="src/rom_w4_ip/rom_w4_ip.v" type="file.verilog" enable="1"/>
+        <File path="src/shibie/binarization.v" type="file.verilog" enable="1"/>
+        <File path="src/shibie/digital_recognition.v" type="file.verilog" enable="1"/>
+        <File path="src/shibie/lcd_driver.v" type="file.verilog" enable="1"/>
+        <File path="src/shibie/myram.v" type="file.verilog" enable="1"/>
+        <File path="src/shibie/projection.v" type="file.verilog" enable="1"/>
+        <File path="src/shibie/rgb2ycbcr.v" type="file.verilog" enable="1"/>
+        <File path="src/syn_gen.v" type="file.verilog" enable="1"/>
+        <File path="src/testpattern.v" type="file.verilog" enable="1"/>
+        <File path="src/top.v" type="file.verilog" enable="1"/>
+        <File path="src/video_frame_buffer/Video_Frame_Buffer_Top.v" type="file.verilog" enable="1"/>
+        <File path="src/top.cst" type="file.cst" enable="1"/>
+        <File path="src/lcd.sdc" type="file.sdc" enable="1"/>
+        <File path="src/top.rao" type="file.gao" enable="0"/>
+        <File path="src/b.mi" type="file.other" enable="1"/>
+        <File path="src/data_0_9/zero.mi" type="file.other" enable="1"/>
+        <File path="src/h0.mi" type="file.other" enable="1"/>
+        <File path="src/h1.mi" type="file.other" enable="1"/>
+        <File path="src/h2.mi" type="file.other" enable="1"/>
+        <File path="src/h3.mi" type="file.other" enable="1"/>
+        <File path="src/h4.mi" type="file.other" enable="1"/>
+    </FileList>
+</Project>

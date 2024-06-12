@@ -1,0 +1,229 @@
+{
+ "Device" : "GW2A-18C",
+ "Files" : [
+  {
+   "Path" : "E:/hbird/xianshi_1/src/SQRT.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/hbird/xianshi_1/src/VIP_Matrix_Generate_3X3_8Bit.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/hbird/xianshi_1/src/VIP_Sobel_Edge_Detector.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/hbird/xianshi_1/src/cmos_8_16bit.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/hbird/xianshi_1/src/cmos_data.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/hbird/xianshi_1/src/conv_cal.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/hbird/xianshi_1/src/data_ram.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/hbird/xianshi_1/src/ddr3_memory_interface/DDR3MI.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/hbird/xianshi_1/src/downsample.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/hbird/xianshi_1/src/fifo_generator_0/fifo_generator_0.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/hbird/xianshi_1/src/fifo_hs/video_fifo.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/hbird/xianshi_1/src/gowin_dpb/gowin_dpb.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/hbird/xianshi_1/src/gowin_prom/rom_w0_ip.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/hbird/xianshi_1/src/gowin_ram16sdp/gowin_ram16sdp.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/hbird/xianshi_1/src/gowin_rpll/cmos_pll.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/hbird/xianshi_1/src/gowin_rpll/mem_pll.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/hbird/xianshi_1/src/gowin_rpll/sys_pll.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/hbird/xianshi_1/src/i2c_master/i2c_config.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/hbird/xianshi_1/src/i2c_master/i2c_master_bit_ctrl.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/hbird/xianshi_1/src/i2c_master/i2c_master_byte_ctrl.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/hbird/xianshi_1/src/i2c_master/i2c_master_defines.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/hbird/xianshi_1/src/i2c_master/i2c_master_top.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/hbird/xianshi_1/src/i2c_master/timescale.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/hbird/xianshi_1/src/line_shift_RAM_8bit.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/hbird/xianshi_1/src/lut_ov5640_rgb565_480_272.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/hbird/xianshi_1/src/mult_gen_0/mult_gen_0.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/hbird/xianshi_1/src/output.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/hbird/xianshi_1/src/param_rom.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/hbird/xianshi_1/src/pool_layer.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/hbird/xianshi_1/src/rom_b_ip/rom_b_ip.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/hbird/xianshi_1/src/rom_data_0/rom_data_0.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/hbird/xianshi_1/src/rom_data_1/rom_data_1.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/hbird/xianshi_1/src/rom_data_2/rom_data_2.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/hbird/xianshi_1/src/rom_data_3/rom_data_3.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/hbird/xianshi_1/src/rom_data_4/rom_data_4.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/hbird/xianshi_1/src/rom_data_5/rom_data_5.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/hbird/xianshi_1/src/rom_data_6/rom_data_6.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/hbird/xianshi_1/src/rom_data_7/rom_data_7.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/hbird/xianshi_1/src/rom_data_8/rom_data_8.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/hbird/xianshi_1/src/rom_data_9/rom_data_9.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/hbird/xianshi_1/src/rom_w1_ip/rom_w1_ip.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/hbird/xianshi_1/src/rom_w2_ip/rom_w2_ip.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/hbird/xianshi_1/src/rom_w3_ip/rom_w3_ip.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/hbird/xianshi_1/src/rom_w4_ip/rom_w4_ip.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/hbird/xianshi_1/src/shibie/binarization.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/hbird/xianshi_1/src/shibie/digital_recognition.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/hbird/xianshi_1/src/shibie/lcd_driver.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/hbird/xianshi_1/src/shibie/myram.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/hbird/xianshi_1/src/shibie/projection.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/hbird/xianshi_1/src/shibie/rgb2ycbcr.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/hbird/xianshi_1/src/syn_gen.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/hbird/xianshi_1/src/testpattern.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/hbird/xianshi_1/src/top.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/hbird/xianshi_1/src/video_frame_buffer/Video_Frame_Buffer_Top.v",
+   "Type" : "verilog"
+  }
+ ],
+ "IncludePath" : [
+
+ ],
+ "LoopLimit" : 2000,
+ "ResultFile" : "E:/hbird/xianshi_1/impl/temp/rtl_parser.result",
+ "Top" : "top",
+ "VerilogStd" : "verilog_2001",
+ "VhdlStd" : "vhdl_93"
+}
